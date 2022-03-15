@@ -1,9 +1,17 @@
-package com.peterlic.files;
+package com.peterlic.files.binary;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Item implements Serializable {
+/**
+ * Class that represents <code>Item</code>.
+ * Implements <code>Serializable</code> interface (for serialization and deserialization)
+ *
+ * @author Ana Peterlic
+ * @see java.io.Serializable
+ * @since 09/03/2022
+ */
+class Item implements Serializable {
 
     private String code;
     private String name;
@@ -39,7 +47,9 @@ public class Item implements Serializable {
         this.price = price;
     }
 
-    // Override toString() method in order to see variables in console.
+    /**
+     * Returns <code>String</code> representation of an object
+     */
     @Override
     public String toString() {
         return "Item{" +

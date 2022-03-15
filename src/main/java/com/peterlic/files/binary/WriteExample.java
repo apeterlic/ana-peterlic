@@ -1,24 +1,34 @@
-package com.peterlic.files;
+package com.peterlic.files.binary;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigDecimal;
 
-public class WriteExample {
+/**
+ * Represents a class used for writing objects in a binary files.
+ *
+ * @author Ana Peterlic
+ * @since 09/03/2022
+ */
+class WriteExample {
 
     public static void main(String[] args) {
-        String filePath = "files/item_apple.dat";
+        // path to file
+        String filePath = "files/item.dat";
 
+        // creating an Item object
         Item item = new Item("123456", "Apple", BigDecimal.valueOf(15.8));
+
         writeToFile(item, filePath);
     }
 
     public static void writeToFile(Item item, String filePath) {
         try (FileOutputStream fileOut = new FileOutputStream(filePath);
              ObjectOutputStream objectOut = new ObjectOutputStream(fileOut)) {
+            // calling writeObject method and passing item as an argument
             objectOut.writeObject(item);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("Error - " + e);
         }
     }
 

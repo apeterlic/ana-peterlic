@@ -1,12 +1,19 @@
-package com.peterlic.files;
+package com.peterlic.files.binary;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
-public class ReadExample {
+/**
+ * Represents a class used for reading objects from binary files.
+ *
+ * @author Ana Peterlic
+ * @since 09/03/2022
+ */
+class ReadExample {
     public static void main(String[] args) {
 
-        String filePath = "files/item_apple.dat";
+        // path to our file
+        String filePath = "files/item.dat";
 
         Item item = readFromFile(filePath);
         System.out.println(item);
@@ -18,8 +25,8 @@ public class ReadExample {
              ObjectInputStream ois = new ObjectInputStream(fis)) {
             Object obj = ois.readObject();
             return (Item) obj;
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (Exception e) {
+            System.err.println("Error - " + e);
             return null;
         }
     }
