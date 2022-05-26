@@ -8,7 +8,7 @@ public class FileUtils {
     }
 
     public static void getFileNames() {
-        File folder = new File("files");
+        File folder = new File("com.peterlic.files");
         File[] listOfFiles = folder.listFiles();
 
         for (File listOfFile : listOfFiles) {

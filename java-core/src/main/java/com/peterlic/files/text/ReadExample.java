@@ -7,7 +7,7 @@ import java.io.FileReader;
  * @author Ana Peterlić
  */
 class ReadExample {
-    private static final String FILE_PATH = "text_files/order.txt";
+    private static final String FILE_PATH = "files/order.txt";
 
     public static void main(String[] args) {
         Order order = readFromFile(FILE_PATH);

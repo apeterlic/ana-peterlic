@@ -7,7 +7,7 @@ import java.util.UUID;
 class WriteExample {
 
     public static void main(String[] args) {
-        String filePath = "text_files/order.txt";
+        String filePath = "files/order.txt";
         Order order = new Order(UUID.randomUUID(), 50.85);
 
         writeToFile(order, filePath);

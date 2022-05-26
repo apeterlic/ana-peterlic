@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
 /**
- * Represents a class used for reading objects from binary files.
+ * Represents a class used for reading objects from binary com.peterlic.files.
  *
  * @author Ana Peterlic
  * @since 09/03/2022

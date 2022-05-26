@@ -1,4 +1,4 @@
-package com.peterlic.class_vs_object;
+package com.peterlic.object.class_vs_object;
 
 /**
  * @author Ana Peterlic

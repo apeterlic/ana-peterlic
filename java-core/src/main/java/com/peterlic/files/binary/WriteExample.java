@@ -5,7 +5,7 @@ import java.io.ObjectOutputStream;
 import java.math.BigDecimal;
 
 /**
- * Represents a class used for writing objects in a binary files.
+ * Represents a class used for writing objects in a binary com.peterlic.files.
  *
  * @author Ana Peterlic
  * @since 09/03/2022
