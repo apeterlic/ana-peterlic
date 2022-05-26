@@ -13,7 +13,7 @@ class ReadExample {
     public static void main(String[] args) {
 
         // path to our file
-        String filePath = "files/item.dat";
+        String filePath = "binary_files/item.dat";
 
         Item item = readFromFile(filePath);
         System.out.println(item);

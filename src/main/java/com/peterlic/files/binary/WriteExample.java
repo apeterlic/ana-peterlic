@@ -14,7 +14,7 @@ class WriteExample {
 
     public static void main(String[] args) {
         // path to file
-        String filePath = "files/item.dat";
+        String filePath = "binary_files/item.dat";
 
         // creating an Item object
         Item item = new Item("123456", "Apple", BigDecimal.valueOf(15.8));
