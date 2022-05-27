@@ -6,7 +6,7 @@ import java.io.FileReader;
 /**
  * @author Ana Peterlić
  */
-class ReadExample {
+class BufferedReaderDemo {
     private static final String FILE_PATH = "files/order.txt";
 
     public static void main(String[] args) {
@@ -15,8 +15,7 @@ class ReadExample {
     }
 
     public static Order readFromFile(String filePath) {
-        try (BufferedReader br =
-                     new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 
             String row;
             while ((row = br.readLine()) != null) {

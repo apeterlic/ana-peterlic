@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.UUID;
 
-class WriteExample {
+class PrintWriterDemo {
 
     public static void main(String[] args) {
         String filePath = "files/order.txt";
@@ -14,7 +14,7 @@ class WriteExample {
     }
 
     public static void writeToFile(Order order, String filePath) {
-        try (FileWriter fileWriter = new FileWriter(filePath);
+        try (FileWriter fileWriter = new FileWriter(filePath, true);
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
 
             printWriter.write(order.getOrderNumber().toString() + "\n");
