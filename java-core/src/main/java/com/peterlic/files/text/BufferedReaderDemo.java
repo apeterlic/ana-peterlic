@@ -7,10 +7,10 @@ import java.io.FileReader;
  * @author Ana Peterlić
  */
 class BufferedReaderDemo {
-    private static final String FILE_PATH = "files/order.txt";
 
     public static void main(String[] args) {
-        Order order = readFromFile(FILE_PATH);
+        String filePath = "files/order.txt";
+        Order order = readFromFile(filePath);
         System.out.println(order);
     }
 

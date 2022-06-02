@@ -7,6 +7,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/java-collections/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-collections/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/java-collections/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/java-core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-core/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/java-core/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/java-functional-programming/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-functional-programming/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/java-functional-programming/src/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/${project.build.directory}/classes" />
       <excludeFolder url="file://$MODULE_DIR$/${project.build.directory}/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target" />

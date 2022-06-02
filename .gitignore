@@ -18,7 +18,11 @@
 *.zip
 *.tar.gz
 *.rar
-/.idea/*
+/.idea/**
+.idea/compiler.xml
+.idea/*/**
+.idea/*
+.idea/
 ana-peterlic.iml
 java-collections/java-collections.iml
 java-core/java-core.iml

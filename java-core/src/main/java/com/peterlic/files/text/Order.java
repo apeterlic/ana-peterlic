@@ -12,6 +12,8 @@ class Order {
         this.price = price;
     }
 
+    // getters and setters
+
     public UUID getOrderNumber() {
         return orderNumber;
     }
@@ -26,5 +28,10 @@ class Order {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return orderNumber + ";" + price;
     }
 }
